@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="标签, FL">
+    <meta name="keywords" content="标签, ML FL FU">
     <meta name="description" content="hahaha">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -18,7 +18,7 @@
 
 
     <title>标签 | LiuJun</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     
 
 
@@ -62,7 +62,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.svg" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">LiuJun</span>
                 </a>
@@ -166,7 +166,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.svg" class="logo-img circle responsive-img">
         
         <div class="logo-name">LiuJun</div>
         <div class="logo-desc">
@@ -349,7 +349,7 @@
                     var typed = new Typed("#subtitle", {
                         strings: [ 
                             
-                                "欢迎来到\*刘军\*的博客！",
+                                "欢迎来到 \* Liu Jun \* 的博客！",
                             
                                 "Welcome to Liu Jun\&#39;s blog!",
                             
@@ -397,10 +397,43 @@
             </div>
             <div class="tag-chips">
                 
+                
+                <a href="/tags/life/" title="life: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="life" style="background-color: #F9EBEA;">life
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
 </div>
+
+    
+    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
+<style type="text/css">
+    #tag-wordcloud {
+        width: 100%;
+        height: 300px;
+    }
+</style>
+
+<div class="container" data-aos="fade-up">
+    <div class="card">
+        <div id="tag-wordcloud" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
+<script type="text/javascript">
+    
+
+    $('#tag-wordcloud').jQCloud([{"text":"life","weight":1,"link":"/tags/life/"}], {
+        autoResize: true
+    });
+</script>
 
     
 
